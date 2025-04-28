@@ -1,35 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className = "auth-content">
+
+        <h1 className = "auth-heading">Настольные игры УрФУ</h1>
+
+        <div className = "auth-panel">
+
+          <div className = "auth-tabs">
+            <a className= "auth-tab" href = "#"><p>вход</p></a>
+            <a className= "auth-tab" href = "#"><p>регистрация</p></a>
+          </div>
+
+          <div className='auth-inputs'>
+            <input type='e-mail' placeholder='E-mail'></input>
+            <input type='password' placeholder='Пароль'></input>
+            
+            <div className=''><input type="checkbox"/><span className='auth-remember'>Запомнить меня</span></div>
+
+            <button type = "submit">Войти</button>
+          </div>
+          
+          <div className='auth-decorline'></div>
+          
+          <a className = "auth-restore-password" href = "#"><p>Забыли пароль?</p></a>
+          <button type="submit" className='auth-google-button'>Продолжить с <b>Google</b></button>
+
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
-
-export default App

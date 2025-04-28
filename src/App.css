@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,50 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+.auth-background {
+  background-color: #FDD1A1;
+}
+
+.auth-content {
+  font-family: "Arial", sans-serif;
+}
+
+.auth-heading {
+  color:#CC7951;
+  font-weight: 600;
+  font-size:32px;
+  line-height: 150%;
+}
+
+.auth-panel {
+  background-color:#FCDDCB;
+}
+
+.auth-tab {
+  text-decoration: none;
+  color: #CC7951;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.auth-remember {
+  color :#943D2C;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.auth-decorline {
+  border-bottom: 0.5px solid #000000;
+}
+
+.auth-restore-password {
+  text-decoration: none;
+  text-transform: none;
+  color: #9B4736;
+  font-weight: 400;
+  font-size: 12px;
 }
