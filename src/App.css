@@ -41,6 +41,11 @@
   color: #888;
 } */
 
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
 .auth-background {
   background-color: #FDD1A1;
 }
@@ -85,7 +90,7 @@
 
 .auth-enter {
   margin-bottom: 30px;
-  width: 300px;
+  width: 310px;
   height: 50px;
   background-color: #CC7951;
   border: none;
@@ -94,6 +99,7 @@
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .auth-tab {
@@ -105,13 +111,31 @@
   line-height: 100%;
 }
 
+.auth-input-container {
+  display: flex;
+}
+
 .auth-inputs input {
+  border: none;
+  outline: none;
   display: block;
   width: 300px;
   height: 50px;
   background-color: #FFEDE2;
-  border-radius: 7%;
-  border: none;
+  border-radius: 7px;
+  color: #CC7951;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.auth-inputs input::placeholder {
+  font-family: "Lora", serif;
+  color: #403A4B99;
+  font-size: 12px;
+  position: absolute;
+  left: 18px;
+  top: 5px;
 }
 
 .auth-inputs input:nth-child(1) {
@@ -154,9 +178,11 @@
 }
 
 .auth-decorline {
+  position: relative;
+  left: -8px;
   padding-bottom: 0;
   margin-bottom: 0;
-  border-bottom: 0.5px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .auth-restore-password {
@@ -165,13 +191,48 @@
   color: #9B4736;
   font-weight: 400;
   font-size: 12px;
+  position: relative;
+  left: -8px;
 }
 
 .auth-google-button {
-  border: none;
-  width: 300px;
+  position: relative;
+  left: -8px;
+  border: none; 
+  width: 310px;
   height: 50px;
   background-color: #FCDDCB;
   border: 1px solid #CC7951;
   border-radius: 7px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-google-button b {
+  margin-left: 5px;
+}
+
+.auth-google-icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: -10%;
+}
+
+.auth-mail-icon {
+  width: 10px;
+  height: 15px;
+  position: relative;
+  left: -25px;
+  top: 18px;
+}
+
+.auth-password-icon {
+  width: 20px;
+  height: 10px;
+  position: relative;
+  left: -30px;
+  top: 18px;
 }
