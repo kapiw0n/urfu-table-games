@@ -22,7 +22,7 @@
 
 <h3>Required:</h3>
 <ol>
-  Babel
-  default npm
-  npm-router-dom
+  Babel<br>
+  default npm<br>
+  npm-router-dom<br>
 </ol>
