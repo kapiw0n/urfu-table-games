@@ -131,9 +131,11 @@ export default function AuthPage() {
 
           <div className="auth-buttons">
             {/* Кнопка отправки формы */}
-            <button className="auth-enter" type="submit">
-              {isLoginTab ? 'Войти' : 'Зарегистрироваться'}
-            </button>
+            <div className='decor-line'>
+              <button className="auth-enter" type="submit">
+                {isLoginTab ? 'Войти' : 'Зарегистрироваться'}
+              </button>
+            </div>
 
             {/* Ссылка "Забыли пароль?" только для входа */}
             {isLoginTab && (
@@ -151,7 +153,7 @@ export default function AuthPage() {
             <button type="button" className="auth-google-button">
               <img 
                 className="auth-google-icon" 
-                src="/assets/img/google-icon.png" 
+                src="/assets/img/google-icon.svg" 
                 alt="Google" 
               />
               Продолжить с <b>Google</b>
