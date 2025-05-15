@@ -17,5 +17,12 @@
   <li>-</li>
   <li>-</li>
   <li>-</li>
-  <li>-</li>
+  <li>-(cry a lot)</li>
 </ul>
+
+<h3>Required:</h3>
+<ol>
+  <li>Babel<li>
+  <li>default npm<li>
+  <li>npm-router-dom<li> 
+</ol>
