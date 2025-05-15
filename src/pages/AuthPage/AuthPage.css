@@ -1,0 +1,266 @@
+/*auth-styles*/
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+.auth-background {
+  background-color: #FDD1A1;
+}
+
+.auth-content {
+  font-family: "Arial", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.auth-heading {
+  color:#CC7951;
+  font-weight: 600;
+  font-size:40px;
+  line-height: 150%;
+}
+
+.auth-panel {
+  background-color:#FCDDCB;
+  margin-top: 20px;
+  padding: 88px 92px;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.auth-tabs {
+  margin-bottom: 40px;
+}
+
+.auth-tabs .auth-tab:nth-child(2){
+  margin-left: 35px;
+}
+
+.auth-rememberbox {
+  margin-bottom: 10px;
+}
+
+.auth-enter {
+  margin-bottom: 30px;
+  width: 310px;
+  height: 50px;
+  background-color: #CC7951;
+  border: none;
+  border-radius: 7px;
+  color: #FFEDE2;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.decor-line {
+  position: relative;
+  right: 9px;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #000000;
+}
+
+.auth-enter:hover {
+  background-color: #d6624a;
+  color: #FFEDE2;
+}
+
+.auth-enter:active {
+  background-color: #b04d39;
+  color: #FFEDE2;
+}
+
+.auth-tab {
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #CC7951;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.auth-input-container {
+  display: flex;
+}
+
+.auth-inputs input {
+  border: none;
+  outline: none;
+  display: block;
+  width: 300px;
+  height: 50px;
+  background-color: #FFEDE2;
+  border-radius: 7px;
+  color: #9B4736;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.auth-inputs input::placeholder {
+  font-family: "Lora", serif;
+  color: #403A4B99;
+  font-size: 12px;
+  position: absolute;
+  left: 18px;
+  top: 5px;
+}
+
+.auth-inputs input:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.auth-inputs input:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #FFF2EA;
+  border-radius: 3px;
+}
+
+.auth-checkbox:checked {
+  background-color: #CC7951;
+}
+
+.auth-checkbox:hover {
+  background-color: #ababab
+}
+
+.auth-checkbox:checked:hover {
+  background-color: #c1937c
+}
+
+.auth-tab:hover {
+  color: #9B4736;
+}
+
+.auth-remember {
+  position: relative;
+  bottom: 7px;
+  left: 3px;
+  color :#943D2C;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.auth-decorline {
+  position: relative;
+  left: -8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #000000;
+}
+
+.auth-restore-password {
+  text-decoration: none;
+  text-transform: none;
+  color: #9B4736;
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+  left: -8px;
+  margin-top: 10px;
+}
+
+.auth-google-button {
+  position: relative;
+  right: 9px;
+  border: none; 
+  width: 310px;
+  height: 50px;
+  background-color: #FCDDCB;
+  border: 1px solid #CC7951;
+  border-radius: 7px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.auth-google-button:hover {
+  background-color: #ffceb2;
+  border: 1px solid #CC7951;
+}
+
+.auth-google-button:active {
+  background-color: #ffc5a3;
+  border: 1px solid #CC7951;
+}
+
+.auth-google-button b {
+  margin-left: 5px;
+}
+
+.auth-google-icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: -10%;
+}
+
+.auth-mail-icon {
+  width: 10px;
+  height: 15px;
+  position: relative;
+  left: -25px;
+  top: 18px;
+}
+
+.auth-password-icon {
+  width: 20px;
+  height: 10px;
+  position: relative;
+  left: -30px;
+  top: 18px;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 12px;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  white-space: nowrap;
+  bottom: -22px;
+}
+
+.input-error {
+  border: 1px solid #ff4444 !important;
+  background-color: #ffe6e6 !important;
+}
+
+.auth-input-container {
+  position: relative;
+}
+
+.auth-input-container.has-error {
+  margin-bottom: 25px;
+}
+
+.general-error {
+  color: #ff4444;
+  text-align: center;
+  margin: 15px 0;
+}
