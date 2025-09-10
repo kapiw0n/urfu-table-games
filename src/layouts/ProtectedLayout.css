@@ -1,0 +1,17 @@
+.protected-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.protected-content {
+  flex: 1;
+  padding: 2rem;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .protected-content {
+    padding: 1rem;
+    margin-top: 60px;
+  }
+}

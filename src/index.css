@@ -1,0 +1,23 @@
+body {
+  background-color: #FDD1A1;
+  font-family: "Arial", sans-serif;
+}
+
+body::selection {
+  background-color: #2C1404;
+  color: #FFE2C2;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 30px;
+  min-height: 100vh;
+  background-color: #FDD1A1;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 60px;
+    padding: 15px;
+  }
+}
